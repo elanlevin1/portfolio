@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects · Elan Levin</title>
+<meta name="description" content="UX case studies by Elan Levin: the Little Lemon restaurant capstone, the MacDaily app redesign, and the Macalester MSCS homepage redesign.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://elanlevin1.github.io/portfolio/projects.html">
+<meta property="og:title" content="Projects · Elan Levin">
+<meta property="og:description" content="UX case studies by Elan Levin: the Little Lemon restaurant capstone, the MacDaily app redesign, and the Macalester MSCS homepage redesign.">
+<meta property="og:image" content="https://elanlevin1.github.io/portfolio/assets/little_lemon_home.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Projects · Elan Levin">
+<meta name="twitter:description" content="UX case studies by Elan Levin: the Little Lemon restaurant capstone, the MacDaily app redesign, and the Macalester MSCS homepage redesign.">
+<meta name="twitter:image" content="https://elanlevin1.github.io/portfolio/assets/little_lemon_home.jpg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-mark">Elan Levin<span class="dot">.</span></a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="assets/Elan-Levin-Resume.pdf" target="_blank" rel="noopener" class="nav-resume">Résumé</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="tight">
+    <div class="wrap">
+      <span class="eyebrow">Case studies</span>
+      <h1>Projects</h1>
+      <p class="lede" style="max-width:60ch">Three case studies, from a from-scratch restaurant website to a campus app redesign. Each one moved through the same rhythm: discover, design, test, refine.</p>
+    </div>
+  </section>
+
+  <!-- ================= LITTLE LEMON ================= -->
+  <section class="case" id="little-lemon" style="--case-color:var(--coral);">
+    <div class="wrap">
+      <span class="eyebrow">01 · Capstone project</span>
+      <div class="case-head">
+        <div>
+          <h2>Little Lemon</h2>
+          <p>My capstone project for the Meta Front-End Developer Professional Certificate: a full website for a fictional Mediterranean restaurant in Chicago, built to the program's real-world brief: marketing site, menu, and a working table-reservation flow.</p>
+          <div class="case-meta">
+            <div><span class="k">Role</span>Front-end developer</div>
+            <div><span class="k">Stack</span>React, semantic HTML/CSS</div>
+            <div><span class="k">Focus</span>Accessible forms, responsive layout</div>
+          </div>
+          <a class="btn btn-gold" href="https://github.com/elanlevin1/little-lemon-app" target="_blank" rel="noopener">View repo on GitHub →</a>
+        </div>
+        <div class="media"><img src="assets/little_lemon_home.jpg" alt="Little Lemon homepage: hero banner, weekly specials, and testimonials"></div>
+      </div>
+
+      <div class="case-body">
+        <div><h4>Home</h4></div>
+        <div class="stage">
+          <p>The homepage leads with what a hungry visitor needs first: who the restaurant is, a reserve-a-table call to action, and a "this week's specials" strip with real dish photography and pricing. Below that, a testimonials section builds trust before asking for a booking, and a short "about" block gives the restaurant a human face with owners Mario and Adrian before the footer closes with contact details and social links.</p>
+          <p>I kept the navigation identical across every page (Home, About, Menu, Reservations, Order Online, Login) so the site reads as one coherent product rather than a set of disconnected screens, and used a warm, high-contrast palette, deep green and mustard yellow against white, to match the brand without overwhelming the food photography.</p>
+        </div>
+        <div><h4>Reservations</h4></div>
+        <div class="stage gold">
+          <div class="media media-inline"><img src="assets/little_lemon_reserve.jpg" alt="Little Lemon reservation form with date, time, guest count, and occasion fields"></div>
+          <p>The reservation flow is deliberately short: choose a date, pick a time, set the number of guests, and optionally flag an occasion like a birthday or anniversary. Each control uses native form elements (date picker, select, radio group) so the form works with a keyboard and a screen reader out of the box, and the primary action stays disabled until the required fields are filled in, a small guardrail against submitting an incomplete booking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MACDAILY ================= -->
+  <section class="case" id="macdaily" style="--case-color:var(--accent);">
+    <div class="wrap">
+      <span class="eyebrow">02 · Team project · with Umair Mohammed, Kayla Olivas, Alex Ott</span>
+      <div class="case-head">
+        <div>
+          <h2>Redesigning the MacDaily</h2>
+          <p>Macalester's campus news, the "MacDaily," lived entirely in a long daily email. Our team set out to turn it into an app that students, faculty, and staff would actually want to open.</p>
+          <div class="case-meta">
+            <div><span class="k">Role</span>UX researcher &amp; designer</div>
+            <div><span class="k">Tools</span>Paper prototyping, Figma</div>
+            <div><span class="k">Method</span>Two rounds of usability testing</div>
+          </div>
+        </div>
+        <div class="media"><img src="assets/macdaily.jpg" alt="MacDaily app home screen with Photo of the Day and page navigation"></div>
+      </div>
+
+      <div class="thread">
+        <div class="stage">
+          <h4>Discover</h4>
+          <p>We talked with students and with a member of Macalester's ITS team who maintains the current MacDaily to understand real constraints: post-length limits, a Gmail character cap, and a push to phase out underused sections. Students told us the plain-text email format buried the events they cared about under scrolling and inconsistent formatting.</p>
+        </div>
+        <div class="stage">
+          <h4>Design</h4>
+          <p>We sketched an app with a photo-of-the-day home screen and separate pages for Events, Students, Faculty &amp; Staff, Community, In the News, and Classifieds, using drop-downs to keep long event descriptions from overwhelming the screen. We also prototyped a Pinterest-style scrolling feed as an alternative home screen, purely to test the idea against the simpler categorized layout.</p>
+        </div>
+        <div class="stage gold">
+          <h4>Test</h4>
+          <p>Across two rounds of usability testing, users found events quickly but missed that they could navigate to previous days, and the categorized layout beat the Pinterest-style feed because titles were easier to scan. Feedback on drop-downs being too small led us to make the entire event row tappable, and one tester's instinct to swipe between days became a real feature: day navigation now responds to swipe gestures, not just arrow taps.</p>
+          <p class="pull">"Very simple design. I like the dropdown." Feedback from our final presentation</p>
+        </div>
+        <div class="stage">
+          <h4>Refine &amp; reflect</h4>
+          <p>A heuristic evaluation confirmed our strongest area was aesthetic, minimalist design, and flagged error prevention as the weak spot to address before a real build. Longer term, campus IT suggested folding the MacDaily into Macalester's existing MacNav app rather than shipping it standalone, a more realistic path to actually reaching students.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MSCS ================= -->
+  <section class="case" id="mscs" style="--case-color:var(--teal);">
+    <div class="wrap">
+      <span class="eyebrow">03 · Team project · with Savannah Haugen, Ethan Caldecott, Kayla Olivas</span>
+      <div class="case-head">
+        <div>
+          <h2>Redesigning the MSCS Department Homepage</h2>
+          <p>The Macalester Math, Statistics &amp; Computer Science website worked fine for people who already knew the department, but it was confusing for the students who needed it most: prospective transfers evaluating whether to major in CS.</p>
+          <div class="case-meta">
+            <div><span class="k">Role</span>UX researcher &amp; designer</div>
+            <div><span class="k">Method</span>Heuristic evaluation, personas, 2 rounds of testing</div>
+            <div><span class="k">Reviewers</span>Peer developers &amp; course professor</div>
+          </div>
+        </div>
+        <div class="media"><img src="assets/mscs.jpg" alt="Redesigned MSCS department homepage, final high-fidelity prototype"></div>
+      </div>
+
+      <div class="thread">
+        <div class="stage">
+          <h4>Discover</h4>
+          <p>We ran a Nielsen heuristic evaluation on the live site and found three recurring violations: dense, unscannable text blocks; a faculty directory ordered by title rather than in any way a newcomer could parse; and no FAQ shortcut anywhere in the navigation. We then built a persona around transfer students and wrote four concrete tasks around their real needs: comparing courses from their old school, tracing the CS course progression, finding the department chair, and locating internship opportunities.</p>
+        </div>
+        <div class="stage">
+          <h4>Design</h4>
+          <p>Paper prototypes established a horizontal header, a course page split into intro/core/elective tiers with descriptions tucked into drop-downs, and a side-by-side course comparison tool letting a transfer student line up their previous school's classes against Macalester's. Colored "puffs" tagged which navigation elements led to which pages, which doubled as a way to narrate the prototype during testing.</p>
+        </div>
+        <div class="stage gold">
+          <h4>Test</h4>
+          <p>Two rounds of usability testing, one on paper and one on the Figma high-fidelity build, surfaced that users understood the interactive cues instinctively, but that heavy bold text was disrupting visual hierarchy and the course-comparison view needed clearer labeling of what "equivalent" meant. Outside developer and faculty review added more: swap the mock calendar for a real Google Calendar embed, use a more academic typeface, and standardize box sizing across pages.</p>
+          <p class="pull">"Genius" and "fascinating." Feedback on the course-comparison tool from reviewing developers</p>
+        </div>
+        <div class="stage">
+          <h4>Refine &amp; reflect</h4>
+          <p>Of sixteen "I like" comments from our final presentation, twelve praised the simplicity of the layout, validation that reducing text density was the right call. We closed a navigation bug (the transfer-course shortcut skipped a step the FAQ path didn't) and left the design with a clear next step: building it with the current MSCS site's real tooling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PATH TO TRANQUILITY ================= -->
+  <section class="tight" style="border-top:1px solid var(--line);">
+    <div class="wrap">
+      <span class="eyebrow">Also worth a look</span>
+      <h2>Additional work</h2>
+      <p style="max-width:56ch">A few more projects that show a different side of my range: emotional design, assistive technology, and accessibility testing.</p>
+
+      <div class="more-list">
+        <div class="more-row">
+          <img class="more-thumb" src="assets/tranquility.jpg" alt="Snowy forest VR scene with falling snow and a hidden bunny">
+          <div class="more-body">
+            <h3>The Path to Tranquility</h3>
+            <p>A virtual-reality scene built in A-Frame with no task or goal beyond making the viewer feel calm: a snowy forest, ambient birdsong, and a hidden bunny for a moment of quiet discovery. In an emotional-impact assessment, every test user's calm and happiness scores held steady or rose, and everyone described feeling relaxed.</p>
+          </div>
+          <a class="btn" href="mailto:elanlevin1@gmail.com?subject=Path%20to%20Tranquility">Ask me about it</a>
+        </div>
+        <div class="more-row">
+          <img class="more-thumb" src="assets/watergun.jpg" alt="Switch adapted water gun with 3.5mm mono jack">
+          <div class="more-body">
+            <h3>Switch Adapted Water Gun</h3>
+            <p>An open-source assistive technology project adapting a toy water gun to fire from a 3.5mm switch, so someone without the fine motor control to pull a trigger can still play. I led the design of a custom stand for independent use by wheelchair users, built directly from watching how test users wanted to hold and aim it; during testing, a wheelchair user asked to take the finished prototype home.</p>
+          </div>
+          <a class="btn" href="mailto:elanlevin1@gmail.com?subject=Switch%20Adapted%20Water%20Gun">Ask me about it</a>
+        </div>
+        <div class="more-row">
+          <img class="more-thumb" src="assets/ggtt.jpg" alt="Glistening Gay Terror Train gameplay screenshot, top-down view of a train car">
+          <div class="more-body">
+            <h3>Glistening Gay Terror Train</h3>
+            <p>A narrative iOS game built in Swift where the player holds conversations with passengers on a train, taken from a whiteboard sketch to a functioning app with 300+ commits. Tested with 30+ users for usability and accessibility; the game was largely VoiceOver-friendly, with one puzzle mechanic flagged as the priority fix for the next iteration.</p>
+          </div>
+          <a class="btn" href="mailto:elanlevin1@gmail.com?subject=Glistening%20Gay%20Terror%20Train">Ask me about it</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>© 2026 Elan Levin</p>
+    <div class="footer-links">
+      <a href="mailto:elanlevin1@gmail.com">Email</a>
+      <a href="https://github.com/elanlevin1">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const t = document.getElementById('navToggle');
+  const l = document.getElementById('navLinks');
+  t.addEventListener('click', () => {
+    const open = l.classList.toggle('open');
+    t.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>
